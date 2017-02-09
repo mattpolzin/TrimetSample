@@ -11,10 +11,29 @@ import UIKit
 
 class TripViewController : UIViewController {
 	
+	let routeCostPrefix = "$"
+	let routeDurationPostfix = "minutes"
+	let routesAvailablePostfix = "TriMet routes available"
+	
+	@IBOutlet weak var routesAvailableText: UILabel!
+	
+	@IBOutlet weak var routeDurationText: UILabel!
+	
+	@IBOutlet weak var routeCostText: UILabel!
+	
+	private var _routeOptions: [RouteOption]?
 	var routeOptions: [RouteOption]? {
-		didSet {
+		set {
+			_routeOptions = newValue
 			refreshTripView()
 		}
+		get {
+			return _routeOptions
+		}
+	}
+	
+	override func viewDidLoad() {
+		refreshTripView()
 	}
 	
 	/**
@@ -23,6 +42,15 @@ class TripViewController : UIViewController {
 	*/
 	private func refreshTripView() {
 		
+		// sort by shortest duration
+		_routeOptions?.sort(by: { (route1 : RouteOption, route2: RouteOption) in
+			return route1.duration <= route2.duration
+		})
+		
+		// and update the labels
+		routesAvailableText?.text = "\(routeOptions?.count ?? 0) \(routesAvailablePostfix)"
+		routeDurationText?.text = "\(routeOptions?[0].duration ?? 0) \(routeDurationPostfix)"
+		routeCostText?.text = "\(routeCostPrefix)\(routeOptions?[0].cost ?? 0)"
 	}
 	
 }

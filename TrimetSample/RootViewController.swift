@@ -52,7 +52,7 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 	}
 	
 	func search(startLocation: String, endLocation: String) {
-		TrimetSearchController.findRoutes(fromStart: startLocation, toEnd: endLocation) {(routeOptions: [RouteOption]) in
+		TrimetSearchController.findRoutes(fromStart: startLocation, toEnd: endLocation) {(routeResults: TrimetSearchResults) in
 			
 			// we could use the defined TripResults segue here, but instead we will
 			// grab a reference to the trip view controller and show it manually
@@ -60,11 +60,18 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 			// is no reason to save that just to pass it to the new view controller
 			// in prepare(for segue:, sender:)
 			
-			let tripViewController = UIStoryboard(name: "TripResults", bundle: nil).instantiateViewController(withIdentifier: "tripViewController") as! TripViewController
-			
-			tripViewController.routeOptions = routeOptions
-			
-			self.navigationController!.pushViewController(tripViewController, animated: true)
+			if routeResults.success {
+				let tripViewController = UIStoryboard(name: "TripResults", bundle: nil).instantiateViewController(withIdentifier: "tripViewController") as! TripViewController
+				
+				tripViewController.routeOptions = routeResults.routes
+				
+				print("\(routeResults.routes)")
+				
+				self.navigationController!.pushViewController(tripViewController, animated: true)
+			} else {
+				//TODO: show error dialog
+				print("There was a problem retrieving results from TriMet! msg: \(routeResults.message)")
+			}
 		}
 	}
 	
