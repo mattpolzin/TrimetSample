@@ -8,6 +8,11 @@
 
 import UIKit
 
+/**
+	The root view controller shows the user a search view and a list of their
+	previous searches. The user can filter the previous searches or add new
+	searches.
+*/
 class RootViewController: UIViewController, SearchViewControllerDelegate {
 
 	weak var searchController: SearchViewController?

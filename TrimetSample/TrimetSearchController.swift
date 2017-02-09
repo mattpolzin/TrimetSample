@@ -9,6 +9,10 @@
 import Foundation
 import SWXMLHash
 
+/**
+	Store the status of a TriMet search (success or failure) and a message upon
+	failure or an array of RouteOptions upon success.
+*/
 struct TrimetSearchResults {
 	var success = true
 	var message = ""
@@ -24,6 +28,9 @@ struct TrimetSearchResults {
 	}
 }
 
+/**
+	Static methods that facilitate searching TriMet's trip planner API,
+*/
 class TrimetSearchController {
 	
 	static let baseUrl = "https://developer.trimet.org/ws/V1/trips/tripplanner/"

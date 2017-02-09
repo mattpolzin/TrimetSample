@@ -40,6 +40,10 @@ protocol SearchViewControllerDelegate {
 	func requestNewHeight(_ height: Int);
 }
 
+/**
+	Control the view the user can interact with on the root page of the app to
+	filter past trip searches or create a new trip from start and end destinations.
+*/
 class SearchViewController : UIViewController {
 	
 	var delegate: SearchViewControllerDelegate?

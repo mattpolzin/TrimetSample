@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+	A table view that shows the user's previous trip searches.
+*/
 class SavedTripsTableViewController : UITableViewController {
 	
 }

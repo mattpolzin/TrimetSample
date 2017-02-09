@@ -9,6 +9,9 @@
 import Foundation
 import CoreData
 
+/**
+	A singleton that manages all previous trip searches.
+*/
 class TripStore {
 	
 	let managedContext: NSManagedObjectContext

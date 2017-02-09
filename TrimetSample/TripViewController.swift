@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+	A detail view that gives the user info on the trip they are planning.
+*/
 class TripViewController : UIViewController {
 	
 	let routeCostPrefix = "$"

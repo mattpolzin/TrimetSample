@@ -9,6 +9,11 @@
 import Foundation
 import SWXMLHash
 
+/**
+	Stores information about a TriMet route. Contains a utility method for
+	parsing (deserializing) TriMet 'itinerary' XML objects and turning them into
+	route options.
+*/
 struct RouteOption: XMLIndexerDeserializable {
 	
 	// Cost of the route in dollars
