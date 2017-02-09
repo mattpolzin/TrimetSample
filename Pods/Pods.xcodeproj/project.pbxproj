@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11A9CB3F7C4935069A7533E2D3D9FCD3 /* Pods-TrimetSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F637653244DEE8FFCABE9E72B1CFE9D /* Pods-TrimetSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EFA2C8CC20F7138C087B43DB4F969A0 /* Pods-TrimetSampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B52FF802C4686542555137294D0C416 /* Pods-TrimetSampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		718B6FDFFAA1F01287B99CACCB290541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7A151C4BFD5B3F0D46A77C3076C33176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		95CDF265FF604C9149A000D3C6D41010 /* Pods-TrimetSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A8B44BD913C8DF04DC6AE648713122 /* Pods-TrimetSample-dummy.m */; };
+		983000ED64920B991D2E20791F1E3B88 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */; };
+		AB036D77AB0F276FF2FA7C59126E4CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B494CE52D4F726984519FBB44AE46C58 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */; };
+		BEDB223777E40DB3C1E637AC7A80319F /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D79F431C516D5112D222339540330DAF /* Pods-TrimetSampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73177AA39F8C2F05AA6EE382F216BFE0 /* Pods-TrimetSampleTests-dummy.m */; };
+		DBDD571F0F42F24DFE4B2BB95CD1C3A4 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF876C5E4EFCB03FFCB6C608B9F04D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2295E5EC606E7DB0A7E8BE79FF599198;
+			remoteInfo = SWXMLHash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0846170B25635F4950401DEB7E0F6F8C /* Pods-TrimetSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrimetSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		10DF3AF18BF0CA2564709D1979F0EF78 /* Pods-TrimetSampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrimetSampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1382AAEB9BE69413BB32662441408446 /* Pods_TrimetSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TrimetSampleTests.framework; path = "Pods-TrimetSampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D98C875B30E461C2597C0772502FF2B /* Pods-TrimetSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrimetSample.release.xcconfig"; sourceTree = "<group>"; };
+		1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		23C736B0E680AF6F1877E8CEE70328A5 /* Pods_TrimetSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TrimetSample.framework; path = "Pods-TrimetSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B52FF802C4686542555137294D0C416 /* Pods-TrimetSampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrimetSampleTests-umbrella.h"; sourceTree = "<group>"; };
+		484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		57D87382AD71889AE245ACA48F1CBD16 /* Pods-TrimetSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrimetSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		708B8F413762E02ABA4C329B0765AEA4 /* Pods-TrimetSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrimetSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73177AA39F8C2F05AA6EE382F216BFE0 /* Pods-TrimetSampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrimetSampleTests-dummy.m"; sourceTree = "<group>"; };
+		7B7F26053A54CF0143E9E1D1DC25CF9E /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		88F63D7150EB7CB2C0CA915A8C8FE68F /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		8E9BDBE23F70FAA51036006681798C83 /* Pods-TrimetSampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrimetSampleTests-resources.sh"; sourceTree = "<group>"; };
+		8F637653244DEE8FFCABE9E72B1CFE9D /* Pods-TrimetSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrimetSample-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9461981B95B66CBB05FDEC0B9442E981 /* Pods-TrimetSampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrimetSampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		94DAF8BE6D8535EEB8EC39750B8A8DBD /* Pods-TrimetSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TrimetSample.modulemap"; sourceTree = "<group>"; };
+		95AD1A715A297C379C160282668EF97F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		A0A8B44BD913C8DF04DC6AE648713122 /* Pods-TrimetSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrimetSample-dummy.m"; sourceTree = "<group>"; };
+		A88291E4F715692EDDFE2C9EC1D7652B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B247855D337BA91F0BDF9A23461C685F /* Pods-TrimetSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrimetSample-resources.sh"; sourceTree = "<group>"; };
+		BE38F55DDAED54B86F7D671F0BC972B7 /* Pods-TrimetSampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TrimetSampleTests.modulemap"; sourceTree = "<group>"; };
+		C13393CD6E00FEB08140339D1DB03E6F /* Pods-TrimetSampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrimetSampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9362EA9F4404839DA8684C1DD2ABF22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D830570BEE61E6DD1C138BC164484A14 /* Pods-TrimetSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrimetSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E69D721417117F423F0DA04776B8FB18 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5A386F038F890E44F568DE1663899E /* Pods-TrimetSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TrimetSample-frameworks.sh"; sourceTree = "<group>"; };
+		F288467EFF93A77FB8F742B44299D87E /* Pods-TrimetSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrimetSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F5FA2A89B27D43FFF26919815BE7869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB036D77AB0F276FF2FA7C59126E4CA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730741BF8C33D71A3DAE44042E7E1764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A151C4BFD5B3F0D46A77C3076C33176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7A629A3440ACC7BFF9A1DEBF3064FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718B6FDFFAA1F01287B99CACCB290541 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030971845A9690039BD4C4A72336E004 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D9B0A430D5C61CAF730AEDB753BDD /* SWXMLHash.swift */,
+				CAE7EE7657D55A521CD6D39E9C03AEAB /* SWXMLHash+TypeConversion.swift */,
+				2DD94BB51DB72757620960724B88B021 /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		1F9D800DE35F1A4B720C1AA27F5DFDC0 /* Pods-TrimetSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9362EA9F4404839DA8684C1DD2ABF22 /* Info.plist */,
+				BE38F55DDAED54B86F7D671F0BC972B7 /* Pods-TrimetSampleTests.modulemap */,
+				10DF3AF18BF0CA2564709D1979F0EF78 /* Pods-TrimetSampleTests-acknowledgements.markdown */,
+				C13393CD6E00FEB08140339D1DB03E6F /* Pods-TrimetSampleTests-acknowledgements.plist */,
+				73177AA39F8C2F05AA6EE382F216BFE0 /* Pods-TrimetSampleTests-dummy.m */,
+				9461981B95B66CBB05FDEC0B9442E981 /* Pods-TrimetSampleTests-frameworks.sh */,
+				8E9BDBE23F70FAA51036006681798C83 /* Pods-TrimetSampleTests-resources.sh */,
+				3B52FF802C4686542555137294D0C416 /* Pods-TrimetSampleTests-umbrella.h */,
+				708B8F413762E02ABA4C329B0765AEA4 /* Pods-TrimetSampleTests.debug.xcconfig */,
+				0846170B25635F4950401DEB7E0F6F8C /* Pods-TrimetSampleTests.release.xcconfig */,
+			);
+			name = "Pods-TrimetSampleTests";
+			path = "Target Support Files/Pods-TrimetSampleTests";
+			sourceTree = "<group>";
+		};
+		2DD94BB51DB72757620960724B88B021 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95AD1A715A297C379C160282668EF97F /* Info.plist */,
+				88F63D7150EB7CB2C0CA915A8C8FE68F /* SWXMLHash.modulemap */,
+				57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */,
+				9C88930491A973BD975A51360689138D /* SWXMLHash-dummy.m */,
+				7B7F26053A54CF0143E9E1D1DC25CF9E /* SWXMLHash-prefix.pch */,
+				484CFEFA68C1936A86ED7E58BC2C6786 /* SWXMLHash-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+		6C85513D4776520CBD1DB4BB0C9E9057 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFDBA996FE30E72348546E4AFF054E74 /* Pods-TrimetSample */,
+				1F9D800DE35F1A4B720C1AA27F5DFDC0 /* Pods-TrimetSampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F038B086B06CA3335C9E632B7286AE07 /* Pods */,
+				B65AB5C4F81794940C8D6D3CA6BE6B9E /* Products */,
+				6C85513D4776520CBD1DB4BB0C9E9057 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AFDBA996FE30E72348546E4AFF054E74 /* Pods-TrimetSample */ = {
+			isa = PBXGroup;
+			children = (
+				A88291E4F715692EDDFE2C9EC1D7652B /* Info.plist */,
+				94DAF8BE6D8535EEB8EC39750B8A8DBD /* Pods-TrimetSample.modulemap */,
+				D830570BEE61E6DD1C138BC164484A14 /* Pods-TrimetSample-acknowledgements.markdown */,
+				57D87382AD71889AE245ACA48F1CBD16 /* Pods-TrimetSample-acknowledgements.plist */,
+				A0A8B44BD913C8DF04DC6AE648713122 /* Pods-TrimetSample-dummy.m */,
+				EB5A386F038F890E44F568DE1663899E /* Pods-TrimetSample-frameworks.sh */,
+				B247855D337BA91F0BDF9A23461C685F /* Pods-TrimetSample-resources.sh */,
+				8F637653244DEE8FFCABE9E72B1CFE9D /* Pods-TrimetSample-umbrella.h */,
+				F288467EFF93A77FB8F742B44299D87E /* Pods-TrimetSample.debug.xcconfig */,
+				1D98C875B30E461C2597C0772502FF2B /* Pods-TrimetSample.release.xcconfig */,
+			);
+			name = "Pods-TrimetSample";
+			path = "Target Support Files/Pods-TrimetSample";
+			sourceTree = "<group>";
+		};
+		B65AB5C4F81794940C8D6D3CA6BE6B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23C736B0E680AF6F1877E8CEE70328A5 /* Pods_TrimetSample.framework */,
+				1382AAEB9BE69413BB32662441408446 /* Pods_TrimetSampleTests.framework */,
+				E69D721417117F423F0DA04776B8FB18 /* SWXMLHash.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F038B086B06CA3335C9E632B7286AE07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				030971845A9690039BD4C4A72336E004 /* SWXMLHash */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17C34AAC363617BB3E5146116BF95A82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDB223777E40DB3C1E637AC7A80319F /* SWXMLHash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5416BFB4067AC25F98B61452C2CB71B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFA2C8CC20F7138C087B43DB4F969A0 /* Pods-TrimetSampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3435099648248576037ADD1410F6B92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A9CB3F7C4935069A7533E2D3D9FCD3 /* Pods-TrimetSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0754509356F42D421A7FAAE960D96574 /* Pods-TrimetSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966EF97A4D00D77B86F614E9EBE9A59A /* Build configuration list for PBXNativeTarget "Pods-TrimetSampleTests" */;
+			buildPhases = (
+				10446240881062F167BF31B8841BCB18 /* Sources */,
+				730741BF8C33D71A3DAE44042E7E1764 /* Frameworks */,
+				5416BFB4067AC25F98B61452C2CB71B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TrimetSampleTests";
+			productName = "Pods-TrimetSampleTests";
+			productReference = 1382AAEB9BE69413BB32662441408446 /* Pods_TrimetSampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2295E5EC606E7DB0A7E8BE79FF599198 /* SWXMLHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264D677EA1A1A7718A8EF2FBB0C76338 /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
+			buildPhases = (
+				007496101514EFF9FBD9BE6DE8FAAEFA /* Sources */,
+				7B7A629A3440ACC7BFF9A1DEBF3064FB /* Frameworks */,
+				17C34AAC363617BB3E5146116BF95A82 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = E69D721417117F423F0DA04776B8FB18 /* SWXMLHash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3EC65F88F4D3BE9EC8C380922DC12629 /* Pods-TrimetSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A83C296080ABA9AFFC63D94E30D57947 /* Build configuration list for PBXNativeTarget "Pods-TrimetSample" */;
+			buildPhases = (
+				56EE4837A5DCF8BC30462491052FC638 /* Sources */,
+				5F5FA2A89B27D43FFF26919815BE7869 /* Frameworks */,
+				C3435099648248576037ADD1410F6B92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACACEB8564F79D7D59E351354297F4F /* PBXTargetDependency */,
+			);
+			name = "Pods-TrimetSample";
+			productName = "Pods-TrimetSample";
+			productReference = 23C736B0E680AF6F1877E8CEE70328A5 /* Pods_TrimetSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B65AB5C4F81794940C8D6D3CA6BE6B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EC65F88F4D3BE9EC8C380922DC12629 /* Pods-TrimetSample */,
+				0754509356F42D421A7FAAE960D96574 /* Pods-TrimetSampleTests */,
+				2295E5EC606E7DB0A7E8BE79FF599198 /* SWXMLHash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		007496101514EFF9FBD9BE6DE8FAAEFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDD571F0F42F24DFE4B2BB95CD1C3A4 /* SWXMLHash+TypeConversion.swift in Sources */,
+				983000ED64920B991D2E20791F1E3B88 /* SWXMLHash-dummy.m in Sources */,
+				B494CE52D4F726984519FBB44AE46C58 /* SWXMLHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10446240881062F167BF31B8841BCB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79F431C516D5112D222339540330DAF /* Pods-TrimetSampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56EE4837A5DCF8BC30462491052FC638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CDF265FF604C9149A000D3C6D41010 /* Pods-TrimetSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACACEB8564F79D7D59E351354297F4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 2295E5EC606E7DB0A7E8BE79FF599198 /* SWXMLHash */;
+			targetProxy = DF876C5E4EFCB03FFCB6C608B9F04D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B0775D933CFE1D2B01D9585CAF653D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D98C875B30E461C2597C0772502FF2B /* Pods-TrimetSample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrimetSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrimetSample/Pods-TrimetSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrimetSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48282F7240ACD7F0FD2BAEBF2DE0E5B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6233B0B8D2B383327D7FADCEB1C3F20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708B8F413762E02ABA4C329B0765AEA4 /* Pods-TrimetSampleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrimetSampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrimetSampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ABB27DEB1749DD6E10FD14165194A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E6217B848339A4E955BDBE2F18BC72 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B97148839CD6D8B3CF6EBB3DF31D7214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F288467EFF93A77FB8F742B44299D87E /* Pods-TrimetSample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrimetSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrimetSample/Pods-TrimetSample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrimetSample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CC89E7D33B8A69BA575FE49E2E679AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0846170B25635F4950401DEB7E0F6F8C /* Pods-TrimetSampleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TrimetSampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TrimetSampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		264D677EA1A1A7718A8EF2FBB0C76338 /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48282F7240ACD7F0FD2BAEBF2DE0E5B3 /* Debug */,
+				6ABB27DEB1749DD6E10FD14165194A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966EF97A4D00D77B86F614E9EBE9A59A /* Build configuration list for PBXNativeTarget "Pods-TrimetSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6233B0B8D2B383327D7FADCEB1C3F20A /* Debug */,
+				CC89E7D33B8A69BA575FE49E2E679AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A83C296080ABA9AFFC63D94E30D57947 /* Build configuration list for PBXNativeTarget "Pods-TrimetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97148839CD6D8B3CF6EBB3DF31D7214 /* Debug */,
+				1B0775D933CFE1D2B01D9585CAF653D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

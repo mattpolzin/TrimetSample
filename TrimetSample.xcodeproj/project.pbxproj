@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A89400CCEA93DD343557641 /* Pods_TrimetSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAC4F750EC3AE3A5FFF3499 /* Pods_TrimetSampleTests.framework */; };
+		C9F1EB851E4C50E1009E8310 /* RouteOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1EB841E4C50E1009E8310 /* RouteOption.swift */; };
+		C9F1EB871E4CC581009E8310 /* TripResults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1EB861E4CC581009E8310 /* TripResults.storyboard */; };
 		C9FB4DDF1E4C08A4006F4556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DDE1E4C08A4006F4556 /* AppDelegate.swift */; };
-		C9FB4DE11E4C08A4006F4556 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DE01E4C08A4006F4556 /* ViewController.swift */; };
+		C9FB4DE11E4C08A4006F4556 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DE01E4C08A4006F4556 /* RootViewController.swift */; };
 		C9FB4DE41E4C08A4006F4556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB4DE21E4C08A4006F4556 /* Main.storyboard */; };
 		C9FB4DE71E4C08A4006F4556 /* TrimetSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DE51E4C08A4006F4556 /* TrimetSample.xcdatamodeld */; };
 		C9FB4DE91E4C08A4006F4556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FB4DE81E4C08A4006F4556 /* Assets.xcassets */; };
 		C9FB4DEC1E4C08A4006F4556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FB4DEA1E4C08A4006F4556 /* LaunchScreen.storyboard */; };
 		C9FB4DF71E4C08A4006F4556 /* TrimetSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DF61E4C08A4006F4556 /* TrimetSampleTests.swift */; };
+		C9FB4E051E4C0C23006F4556 /* TripStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4E041E4C0C23006F4556 /* TripStore.swift */; };
+		C9FB4E071E4C0F00006F4556 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4E061E4C0F00006F4556 /* SearchViewController.swift */; };
+		C9FB4E091E4C0F79006F4556 /* SavedTripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4E081E4C0F79006F4556 /* SavedTripsTableViewController.swift */; };
+		C9FB4E0B1E4C0FCA006F4556 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4E0A1E4C0FCA006F4556 /* TripViewController.swift */; };
+		C9FB4E0E1E4C102D006F4556 /* TrimetSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4E0D1E4C102D006F4556 /* TrimetSearchController.swift */; };
+		F97CC48CC0F101B281CA19E1 /* Pods_TrimetSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C85A2CF034ADDE3B58A0721 /* Pods_TrimetSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29781860C3FE8F6844BCF033 /* Pods-TrimetSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSample/Pods-TrimetSample.release.xcconfig"; sourceTree = "<group>"; };
+		3C85A2CF034ADDE3B58A0721 /* Pods_TrimetSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrimetSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7C93FC70F96971310EDACD /* Pods-TrimetSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A590D043047D43F66516E80 /* Pods-TrimetSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DCCE32441E4E06B9AB0BEC6 /* Pods-TrimetSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSample/Pods-TrimetSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F1EB841E4C50E1009E8310 /* RouteOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteOption.swift; sourceTree = "<group>"; };
+		C9F1EB861E4CC581009E8310 /* TripResults.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripResults.storyboard; sourceTree = "<group>"; };
 		C9FB4DDB1E4C08A4006F4556 /* TrimetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB4DDE1E4C08A4006F4556 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9FB4DE01E4C08A4006F4556 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9FB4DE01E4C08A4006F4556 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C9FB4DE31E4C08A4006F4556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9FB4DE61E4C08A4006F4556 /* TrimetSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrimetSample.xcdatamodel; sourceTree = "<group>"; };
 		C9FB4DE81E4C08A4006F4556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +54,12 @@
 		C9FB4DF21E4C08A4006F4556 /* TrimetSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimetSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB4DF61E4C08A4006F4556 /* TrimetSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimetSampleTests.swift; sourceTree = "<group>"; };
 		C9FB4DF81E4C08A4006F4556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FB4E041E4C0C23006F4556 /* TripStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStore.swift; sourceTree = "<group>"; };
+		C9FB4E061E4C0F00006F4556 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C9FB4E081E4C0F79006F4556 /* SavedTripsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTripsTableViewController.swift; sourceTree = "<group>"; };
+		C9FB4E0A1E4C0FCA006F4556 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		C9FB4E0D1E4C102D006F4556 /* TrimetSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrimetSearchController.swift; sourceTree = "<group>"; };
+		DFAC4F750EC3AE3A5FFF3499 /* Pods_TrimetSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrimetSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97CC48CC0F101B281CA19E1 /* Pods_TrimetSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +75,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A89400CCEA93DD343557641 /* Pods_TrimetSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9282CC266E6DE910D05D87CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C85A2CF034ADDE3B58A0721 /* Pods_TrimetSample.framework */,
+				DFAC4F750EC3AE3A5FFF3499 /* Pods_TrimetSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B531BAA589ACF32342E77D21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DCCE32441E4E06B9AB0BEC6 /* Pods-TrimetSample.debug.xcconfig */,
+				29781860C3FE8F6844BCF033 /* Pods-TrimetSample.release.xcconfig */,
+				3F7C93FC70F96971310EDACD /* Pods-TrimetSampleTests.debug.xcconfig */,
+				4A590D043047D43F66516E80 /* Pods-TrimetSampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9FB4DD21E4C08A4006F4556 = {
 			isa = PBXGroup;
 			children = (
 				C9FB4DDD1E4C08A4006F4556 /* TrimetSample */,
 				C9FB4DF51E4C08A4006F4556 /* TrimetSampleTests */,
 				C9FB4DDC1E4C08A4006F4556 /* Products */,
+				B531BAA589ACF32342E77D21 /* Pods */,
+				9282CC266E6DE910D05D87CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +125,12 @@
 		C9FB4DDD1E4C08A4006F4556 /* TrimetSample */ = {
 			isa = PBXGroup;
 			children = (
+				C9FB4E031E4C0BEC006F4556 /* Views */,
+				C9FB4E021E4C0BE2006F4556 /* Controllers */,
+				C9FB4E011E4C0BD1006F4556 /* Model */,
 				C9FB4DDE1E4C08A4006F4556 /* AppDelegate.swift */,
-				C9FB4DE01E4C08A4006F4556 /* ViewController.swift */,
-				C9FB4DE21E4C08A4006F4556 /* Main.storyboard */,
 				C9FB4DE81E4C08A4006F4556 /* Assets.xcassets */,
-				C9FB4DEA1E4C08A4006F4556 /* LaunchScreen.storyboard */,
 				C9FB4DED1E4C08A4006F4556 /* Info.plist */,
-				C9FB4DE51E4C08A4006F4556 /* TrimetSample.xcdatamodeld */,
 			);
 			path = TrimetSample;
 			sourceTree = "<group>";
@@ -99,6 +144,46 @@
 			path = TrimetSampleTests;
 			sourceTree = "<group>";
 		};
+		C9FB4E011E4C0BD1006F4556 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB4DE51E4C08A4006F4556 /* TrimetSample.xcdatamodeld */,
+				C9FB4E041E4C0C23006F4556 /* TripStore.swift */,
+				C9F1EB841E4C50E1009E8310 /* RouteOption.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C9FB4E021E4C0BE2006F4556 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB4E0C1E4C0FE1006F4556 /* View Controllers */,
+				C9FB4E0D1E4C102D006F4556 /* TrimetSearchController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9FB4E031E4C0BEC006F4556 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB4DEA1E4C08A4006F4556 /* LaunchScreen.storyboard */,
+				C9FB4DE21E4C08A4006F4556 /* Main.storyboard */,
+				C9F1EB861E4CC581009E8310 /* TripResults.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C9FB4E0C1E4C0FE1006F4556 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB4E061E4C0F00006F4556 /* SearchViewController.swift */,
+				C9FB4DE01E4C08A4006F4556 /* RootViewController.swift */,
+				C9FB4E081E4C0F79006F4556 /* SavedTripsTableViewController.swift */,
+				C9FB4E0A1E4C0FCA006F4556 /* TripViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9FB4DFB1E4C08A4006F4556 /* Build configuration list for PBXNativeTarget "TrimetSample" */;
 			buildPhases = (
+				9FACB37F1839DAA1E5BA4EC1 /* [CP] Check Pods Manifest.lock */,
 				C9FB4DD71E4C08A4006F4556 /* Sources */,
 				C9FB4DD81E4C08A4006F4556 /* Frameworks */,
 				C9FB4DD91E4C08A4006F4556 /* Resources */,
+				EB5DAD0481599E990B7DB8EE /* [CP] Embed Pods Frameworks */,
+				6EF0D3528F1D83136A4FE9E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9FB4DFE1E4C08A4006F4556 /* Build configuration list for PBXNativeTarget "TrimetSampleTests" */;
 			buildPhases = (
+				89A2A3E46E286E8CD8DA2CBE /* [CP] Check Pods Manifest.lock */,
 				C9FB4DEE1E4C08A4006F4556 /* Sources */,
 				C9FB4DEF1E4C08A4006F4556 /* Frameworks */,
 				C9FB4DF01E4C08A4006F4556 /* Resources */,
+				2C71859182928CC2F8931CFE /* [CP] Embed Pods Frameworks */,
+				4154E7E5250BEF373FA1290E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +277,7 @@
 			files = (
 				C9FB4DEC1E4C08A4006F4556 /* LaunchScreen.storyboard in Resources */,
 				C9FB4DE91E4C08A4006F4556 /* Assets.xcassets in Resources */,
+				C9F1EB871E4CC581009E8310 /* TripResults.storyboard in Resources */,
 				C9FB4DE41E4C08A4006F4556 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,13 +291,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C71859182928CC2F8931CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4154E7E5250BEF373FA1290E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EF0D3528F1D83136A4FE9E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrimetSample/Pods-TrimetSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A2A3E46E286E8CD8DA2CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FACB37F1839DAA1E5BA4EC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5DAD0481599E990B7DB8EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrimetSample/Pods-TrimetSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9FB4DD71E4C08A4006F4556 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FB4DE11E4C08A4006F4556 /* ViewController.swift in Sources */,
+				C9FB4E071E4C0F00006F4556 /* SearchViewController.swift in Sources */,
+				C9FB4DE11E4C08A4006F4556 /* RootViewController.swift in Sources */,
+				C9FB4E0B1E4C0FCA006F4556 /* TripViewController.swift in Sources */,
+				C9FB4E091E4C0F79006F4556 /* SavedTripsTableViewController.swift in Sources */,
 				C9FB4DDF1E4C08A4006F4556 /* AppDelegate.swift in Sources */,
+				C9FB4E051E4C0C23006F4556 /* TripStore.swift in Sources */,
+				C9FB4E0E1E4C102D006F4556 /* TrimetSearchController.swift in Sources */,
+				C9F1EB851E4C50E1009E8310 /* RouteOption.swift in Sources */,
 				C9FB4DE71E4C08A4006F4556 /* TrimetSample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,11 +534,13 @@
 		};
 		C9FB4DFC1E4C08A4006F4556 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCCE32441E4E06B9AB0BEC6 /* Pods-TrimetSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQ7925Z798;
 				INFOPLIST_FILE = TrimetSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathew.TrimetSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -356,6 +549,7 @@
 		};
 		C9FB4DFD1E4C08A4006F4556 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29781860C3FE8F6844BCF033 /* Pods-TrimetSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQ7925Z798;
@@ -369,6 +563,7 @@
 		};
 		C9FB4DFF1E4C08A4006F4556 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7C93FC70F96971310EDACD /* Pods-TrimetSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +579,7 @@
 		};
 		C9FB4E001E4C08A4006F4556 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A590D043047D43F66516E80 /* Pods-TrimetSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -416,6 +612,7 @@
 				C9FB4DFD1E4C08A4006F4556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9FB4DFE1E4C08A4006F4556 /* Build configuration list for PBXNativeTarget "TrimetSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +621,7 @@
 				C9FB4E001E4C08A4006F4556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

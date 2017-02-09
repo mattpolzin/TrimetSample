@@ -13,10 +13,13 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+	var tripStore: TripStore?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		// create a trip store that will be accessed to store a history of searched trips
+		tripStore = TripStore(persistentContainer.viewContext)
+		
 		return true
 	}
 

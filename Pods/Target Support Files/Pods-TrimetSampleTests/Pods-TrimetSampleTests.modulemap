@@ -1,0 +1,6 @@
+framework module Pods_TrimetSampleTests {
+  umbrella header "Pods-TrimetSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

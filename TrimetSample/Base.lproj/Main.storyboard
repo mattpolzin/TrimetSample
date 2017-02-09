@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="egd-D8-6Xe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search View Controller-->
+        <scene sceneID="ykD-wf-cCk">
+            <objects>
+                <viewController id="jSq-N1-Zvw" customClass="SearchViewController" customModule="TrimetSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Rv-Rw-aPv"/>
+                        <viewControllerLayoutGuide type="bottom" id="8To-bn-Onm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L8w-V6-cns">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="x2d-Gf-MeN">
+                                <rect key="frame" x="16" y="0.0" width="252" height="101"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Filter or Start Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CfW-O7-0b8">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="50.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="startLocationChanged:" destination="jSq-N1-Zvw" eventType="editingChanged" id="au1-ZF-FAt"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-fY-q3V">
+                                        <rect key="frame" x="0.0" y="50.5" width="252" height="50.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqt-tU-02T">
+                                <rect key="frame" x="316" y="36" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="9L1-vQ-OT3"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="jSq-N1-Zvw" eventType="touchUpInside" id="Ze2-5x-gQu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-gU-moY" userLabel="Add Button">
+                                <rect key="frame" x="342" y="40" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="hhW-VK-Ax5"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="jSq-N1-Zvw" eventType="touchUpInside" id="dT9-7e-KN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhf-EV-HRa">
+                                <rect key="frame" x="273" y="36" width="38" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="dQH-zs-Hho"/>
+                                </constraints>
+                                <state key="normal" title="Swap"/>
+                                <connections>
+                                    <action selector="swapButtonPressed:" destination="jSq-N1-Zvw" eventType="touchUpInside" id="xnB-VD-Su3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BL5-gU-moY" firstAttribute="trailing" secondItem="Oqt-tU-02T" secondAttribute="trailing" id="5Hu-ie-q5M"/>
+                            <constraint firstItem="BL5-gU-moY" firstAttribute="centerY" secondItem="Oqt-tU-02T" secondAttribute="centerY" id="Dze-5y-daC"/>
+                            <constraint firstItem="8To-bn-Onm" firstAttribute="top" secondItem="x2d-Gf-MeN" secondAttribute="bottom" id="LKy-iy-5b8"/>
+                            <constraint firstItem="x2d-Gf-MeN" firstAttribute="leading" secondItem="L8w-V6-cns" secondAttribute="leadingMargin" id="MPU-do-Rqj"/>
+                            <constraint firstItem="Vhf-EV-HRa" firstAttribute="centerY" secondItem="L8w-V6-cns" secondAttribute="centerY" id="Z1z-PU-tOu"/>
+                            <constraint firstItem="Oqt-tU-02T" firstAttribute="centerY" secondItem="L8w-V6-cns" secondAttribute="centerY" id="ZgN-0X-0C0"/>
+                            <constraint firstItem="x2d-Gf-MeN" firstAttribute="top" secondItem="4Rv-Rw-aPv" secondAttribute="bottom" id="ie7-je-5hz"/>
+                            <constraint firstItem="Oqt-tU-02T" firstAttribute="leading" secondItem="Vhf-EV-HRa" secondAttribute="trailing" constant="5" id="k2H-qu-6wb"/>
+                            <constraint firstItem="Oqt-tU-02T" firstAttribute="trailing" secondItem="L8w-V6-cns" secondAttribute="trailingMargin" constant="5" id="yEE-rd-5qq"/>
+                            <constraint firstItem="Vhf-EV-HRa" firstAttribute="leading" secondItem="x2d-Gf-MeN" secondAttribute="trailing" constant="5" id="yun-hC-bYo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="BL5-gU-moY" id="hbI-yv-Gfh"/>
+                        <outlet property="endLocation" destination="Wea-fY-q3V" id="j7P-VM-AEM"/>
+                        <outlet property="searchButton" destination="Oqt-tU-02T" id="Phh-aX-eFL"/>
+                        <outlet property="startLocation" destination="CfW-O7-0b8" id="2SE-N3-odE"/>
+                        <outlet property="swapButton" destination="Vhf-EV-HRa" id="6VO-Zw-vv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLN-LX-oab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="-48"/>
+        </scene>
+        <!--tripViewController-->
+        <scene sceneID="jV2-7f-Fs4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripResults" referencedIdentifier="tripViewController" id="VdB-00-q5M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueX-wf-GQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511" y="139"/>
+        </scene>
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="rootViewController" id="BYZ-38-t0r" customClass="RootViewController" customModule="TrimetSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +117,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EpW-1p-Rhq" userLabel="Search Container View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="1GG-0M-IFM"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="jSq-N1-Zvw" kind="embed" identifier="SearchEmbedSegue" id="dnW-fZ-Hvv"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1a-ga-Vdf" userLabel="Saved Trip Container View">
+                                <rect key="frame" x="0.0" y="166" width="375" height="501"/>
+                                <connections>
+                                    <segue destination="pwK-no-6R9" kind="embed" identifier="SavedTripsEmbedSegue" id="tJ4-Rh-g0V"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EpW-1p-Rhq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0PQ-jP-DRT"/>
+                            <constraint firstItem="t1a-ga-Vdf" firstAttribute="top" secondItem="EpW-1p-Rhq" secondAttribute="bottom" id="8ke-jh-Jb2"/>
+                            <constraint firstAttribute="trailing" secondItem="EpW-1p-Rhq" secondAttribute="trailing" id="96h-rV-Ijn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1a-ga-Vdf" secondAttribute="bottom" id="OLj-1h-hhk"/>
+                            <constraint firstItem="t1a-ga-Vdf" firstAttribute="top" secondItem="EpW-1p-Rhq" secondAttribute="bottom" id="PWN-Uf-QmY"/>
+                            <constraint firstItem="t1a-ga-Vdf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TWa-Rm-TFQ"/>
+                            <constraint firstItem="EpW-1p-Rhq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="igJ-tg-p4w"/>
+                            <constraint firstAttribute="trailing" secondItem="t1a-ga-Vdf" secondAttribute="trailing" id="n6f-03-5Un"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zaa-S4-GBG"/>
+                    <connections>
+                        <outlet property="searchHeightConstraint" destination="1GG-0M-IFM" id="ecd-BE-yaF"/>
+                        <segue destination="VdB-00-q5M" kind="show" id="SQW-v8-FrL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+        </scene>
+        <!--Saved Trips Table View Controller-->
+        <scene sceneID="1tm-Za-mcG">
+            <objects>
+                <tableViewController id="pwK-no-6R9" customClass="SavedTripsTableViewController" customModule="TrimetSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NpA-Vg-Kcj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="501"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Ew-U6-mGo">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ew-U6-mGo" id="QYT-KM-AtV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pwK-no-6R9" id="HSH-yC-asY"/>
+                            <outlet property="delegate" destination="pwK-no-6R9" id="35w-Kt-Fo7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnh-g1-x8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ce0-aZ-DP1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="egd-D8-6Xe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f2x-vW-1W5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mGF-71-tfA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7d-vo-79w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="139"/>
         </scene>
     </scenes>
 </document>
