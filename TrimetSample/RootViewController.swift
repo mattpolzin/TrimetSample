@@ -48,7 +48,7 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 	//
 	
 	func filterTextChanged(_ text: String) {
-		
+		//TODO: filter the table view rows
 	}
 	
 	func search(startLocation: String, endLocation: String) {
@@ -75,6 +75,7 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 		}
 	}
 	
+	// we will let the search view determine its own height based on its content.
 	func requestNewHeight(_ height: Int) {
 		self.searchHeightConstraint.constant = CGFloat(height)
 		UIView.animate(withDuration: 0.2, animations: {()

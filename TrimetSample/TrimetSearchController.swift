@@ -73,8 +73,9 @@ class TrimetSearchController : NSObject {
 	*/
 	class func generateSearchUrl(from: String, to: String) -> URL? {
 		//TOOD: clean this up by building the URL using a utility class
-		print("\(baseUrl)\(fromParam)\(from.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)))/\(toParam)\(to.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed))/\(appIdParam)")
-		return URL(string:"\(baseUrl)\(fromParam)\(from.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""))/\(toParam)\(to.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")/\(appIdParam)")
+		let urlEncodedFrom = from.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+		let urlEncodedTo = to.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+		return URL(string:"\(baseUrl)\(fromParam)\(urlEncodedFrom))/\(toParam)\(urlEncodedTo)/\(appIdParam)")
 	}
 	
 	/**
