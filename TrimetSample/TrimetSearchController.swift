@@ -24,7 +24,7 @@ struct TrimetSearchResults {
 	}
 }
 
-class TrimetSearchController : NSObject {
+class TrimetSearchController {
 	
 	static let baseUrl = "https://developer.trimet.org/ws/V1/trips/tripplanner/"
 	static let appIdParam = "appId/6079AA4BBA3D45EB4395BD3B9"

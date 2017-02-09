@@ -16,4 +16,6 @@ class TripStore {
 	init(_ context: NSManagedObjectContext) {
 		managedContext = context
 	}
+	
+	
 }
