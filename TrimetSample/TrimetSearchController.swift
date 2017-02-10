@@ -83,9 +83,9 @@ class TrimetSearchController {
 	*/
 	class func generateSearchUrl(from: String, to: String) -> URL? {
 		//TOOD: clean this up by building the URL using a utility class
-		let urlEncodedFrom = from.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-		let urlEncodedTo = to.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-		return URL(string:"\(baseUrl)\(fromParam)\(urlEncodedFrom))/\(toParam)\(urlEncodedTo)/\(appIdParam)")
+		let urlEncodedFrom: String = from.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+		let urlEncodedTo: String = to.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+		return URL(string:"\(baseUrl)\(fromParam)\(urlEncodedFrom)/\(toParam)\(urlEncodedTo)/\(appIdParam)")
 	}
 	
 	/**
@@ -94,29 +94,51 @@ class TrimetSearchController {
 		- Parameter routeOptionsXMLString: The XML string to parse.
 	*/
 	class func parseRouteOptions(_ routeOptionsXMLString: String?) -> TrimetSearchResults {
+		print(routeOptionsXMLString!)
+		
 		var results = TrimetSearchResults()
 		var routeOptions = [RouteOption]()
+		
+		var errorMessage: String?
 		
 		if let xmlString = routeOptionsXMLString {
 			let xml = SWXMLHash.parse(xmlString)
 			
 			do {
-				routeOptions = try xml["response"]["itineraries"]["itinerary"].value()
-			} catch _ as XMLDeserializationError {
-				//TODO: handle this error
-				print("error deserializing!")
-			} catch _ as IndexingError {
-				//TOOD: handle this error
-				print("error finding key in XML!")
-			} catch _ {
-				//TODO: handle catchall error
-				print("unkown error parsing XML!")
+				let success: Bool = try xml["response"].value(ofAttribute:"success")
+				if success {
+					// success!
+					
+					do {
+						routeOptions = try xml["response"]["itineraries"]["itinerary"].value()
+						results.routes = routeOptions
+					} catch let error as XMLDeserializationError {
+						errorMessage = "Error deserializing! msg: \(error.description)"
+					} catch let error as IndexingError {
+						errorMessage = "Error finding key in XML! msg: \(error.description)"
+					} catch _ {
+						errorMessage = "Uknown Error parsing XML!"
+					}
+					
+				} else {
+					// failure
+					
+					let reason: String = try xml["response"]["error"]["message"].value()
+					errorMessage = reason
+				}
+			} catch {
+				errorMessage = "Uknown Error parsing XML!"
 			}
 			
-			results.routes = routeOptions
-			
 		} else {
-			results = TrimetSearchResults.errorResult(message: "Did not receive valid results from TriMet")
+			// failure
+			
+			errorMessage = "Did not receive valid results from TriMet"
+		}
+		
+		// set up error message in returned results
+		if let errMsg = errorMessage {
+			results = TrimetSearchResults.errorResult(message: errMsg)
 		}
 		
 		return results

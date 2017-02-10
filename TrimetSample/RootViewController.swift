@@ -57,6 +57,12 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 	}
 	
 	func search(startLocation: String, endLocation: String) {
+		
+		// before searching, let's save the trip so it can be searched more easily
+		// in the future
+		let appDelegate = UIApplication.shared.delegate as! AppDelegate
+		appDelegate.tripStore?.addTrip(startLocation: startLocation, endLocation: endLocation)
+		
 		TrimetSearchController.findRoutes(fromStart: startLocation, toEnd: endLocation) {(routeResults: TrimetSearchResults) in
 			
 			// we could use the defined TripResults segue here, but instead we will
