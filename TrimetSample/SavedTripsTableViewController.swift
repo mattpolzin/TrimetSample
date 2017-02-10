@@ -9,6 +9,19 @@
 import Foundation
 import UIKit
 
+protocol SavedTripsTableViewControllerDelegate {
+	
+	/**
+		The user has selected a row in the table view with the given start/end
+		locations.
+	
+		- Parameters:
+			- startLocation: Location where the search begins.
+			- endLocation: Location where the search ends.
+	*/
+	func tripSelected(startLocation: String, endLocation: String)
+}
+
 /**
 	A table view that shows the user's previous trip searches.
 */
@@ -16,7 +29,9 @@ class SavedTripsTableViewController : UITableViewController {
 	
 	static let tableViewCellId = "savedTripsTableViewCell"
 	
-	var tripStore: TripStore?
+	private var tripStore: TripStore?
+	
+	var delegate: SavedTripsTableViewControllerDelegate?
 	
 	override func viewDidLoad() {
 		let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -35,20 +50,10 @@ class SavedTripsTableViewController : UITableViewController {
 	// MARK: UITableViewDelegate
 	//
 	
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		var cell: UITableViewCell?
-		
-		if let tmpCell = tableView.dequeueReusableCell(withIdentifier: SavedTripsTableViewController.tableViewCellId) {
-			cell = tmpCell
-		} else {
-			cell = UITableViewCell(style: .default, reuseIdentifier: SavedTripsTableViewController.tableViewCellId)
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if let trip = tripStore?.storedTrips?[indexPath[1]] {
+			delegate?.tripSelected(startLocation: (trip.startLocation?.shortName ?? ""), endLocation: (trip.endLocation?.shortName ?? ""))
 		}
-		
-		let trip = tripStore?.storedTrips?[indexPath[1]] as Trip?
-		
-		cell?.textLabel?.text = "\(trip?.startLocation?.shortName ?? "")     ->     \(trip?.endLocation?.shortName ?? "")"
-		
-		return cell!
 	}
 	
 	//
@@ -61,6 +66,25 @@ class SavedTripsTableViewController : UITableViewController {
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
 		return 1
+	}
+	
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		var cell: UITableViewCell?
+		
+		// grab or create cell
+		if let tmpCell = tableView.dequeueReusableCell(withIdentifier: SavedTripsTableViewController.tableViewCellId) {
+			cell = tmpCell
+		} else {
+			cell = UITableViewCell(style: .default, reuseIdentifier: SavedTripsTableViewController.tableViewCellId)
+		}
+		
+		// get trip object
+		let trip = tripStore?.storedTrips?[indexPath[1]] as Trip?
+		
+		// udpate cell text
+		cell?.textLabel?.text = "\(trip?.startLocation?.shortName ?? "")     ->     \(trip?.endLocation?.shortName ?? "")"
+		
+		return cell!
 	}
 	
 	//

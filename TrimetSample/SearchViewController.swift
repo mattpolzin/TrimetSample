@@ -17,7 +17,7 @@ protocol SearchViewControllerDelegate {
 	
 		- Parameter text: The new text of the filter text view.
 	*/
-	func filterTextChanged(_ text: String);
+	func filterTextChanged(_ text: String)
 	
 	/**
 		The user has searched for a route.
@@ -26,7 +26,7 @@ protocol SearchViewControllerDelegate {
 			- startLocation: The location where the trip will begin.
 			- endLocation: The location where the trip will end.
 	*/
-	func search(startLocation: String, endLocation: String);
+	func search(startLocation: String, endLocation: String)
 	
 	/**
 		The search view needs more or less space. It also might be preferable to
@@ -37,7 +37,7 @@ protocol SearchViewControllerDelegate {
 							be based on how much content needs to  be shown in
 							the search view.
 	*/
-	func requestNewHeight(_ height: Int);
+	func requestNewHeight(_ height: Int)
 }
 
 /**

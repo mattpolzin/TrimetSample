@@ -13,7 +13,7 @@ import UIKit
 	previous searches. The user can filter the previous searches or add new
 	searches.
 */
-class RootViewController: UIViewController, SearchViewControllerDelegate {
+class RootViewController: UIViewController, SearchViewControllerDelegate, SavedTripsTableViewControllerDelegate {
 
 	weak var searchController: SearchViewController?
 	weak var tripsController: SavedTripsTableViewController?
@@ -44,6 +44,7 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 			
 			// we are grabbing a reference to the saved trips table view controller:
 			tripsController = (segue.destination as! SavedTripsTableViewController)
+			tripsController?.delegate = self
 			
 		}
 	}
@@ -92,6 +93,14 @@ class RootViewController: UIViewController, SearchViewControllerDelegate {
 		UIView.animate(withDuration: 0.2, animations: {()
 			self.view.layoutIfNeeded()
 		})
+	}
+	
+	//
+	// Mark: SavedTripsViewControllerDelegate
+	//
+	
+	func tripSelected(startLocation: String, endLocation: String) {
+		search(startLocation: startLocation, endLocation: endLocation)
 	}
 }
 
