@@ -58,9 +58,9 @@ class TripViewController : UIViewController {
 		}
 		
 		// let the user know their route was not found.
-		routesAvailableText?.text = "\(routeOptions?.count ?? 0) \(routesAvailablePostfix)"
-		routeDurationText?.text = "\(routeOptions?[0].duration ?? 0) \(routeDurationPostfix)"
-		routeCostText?.text = "\(routeCostPrefix)\(routeOptions?[0].cost ?? 0)"
+		routesAvailableText?.text = "No routes were found."
+		routeDurationText?.text = ""
+		routeCostText?.text = ""
 	}
 	
 }
