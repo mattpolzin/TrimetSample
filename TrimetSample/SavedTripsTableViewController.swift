@@ -27,7 +27,7 @@ protocol SavedTripsTableViewControllerDelegate {
 */
 class SavedTripsTableViewController : UITableViewController {
 	
-	static let tableViewCellId = "savedTripsTableViewCell"
+	static let tableViewCellId = "tripCell"
 	
 	private var tripStore: TripStore?
 	
@@ -69,20 +69,21 @@ class SavedTripsTableViewController : UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		var cell: UITableViewCell?
+		var cell: TripTableViewCell?
 		
 		// grab or create cell
-		if let tmpCell = tableView.dequeueReusableCell(withIdentifier: SavedTripsTableViewController.tableViewCellId) {
+		if let tmpCell = tableView.dequeueReusableCell(withIdentifier: SavedTripsTableViewController.tableViewCellId) as? TripTableViewCell {
 			cell = tmpCell
 		} else {
-			cell = UITableViewCell(style: .default, reuseIdentifier: SavedTripsTableViewController.tableViewCellId)
+			cell = TripTableViewCell(style: .default, reuseIdentifier: SavedTripsTableViewController.tableViewCellId)
 		}
 		
 		// get trip object
 		let trip = tripStore?.storedTrips?[indexPath[1]] as Trip?
 		
 		// udpate cell text
-		cell?.textLabel?.text = "\(trip?.startLocation?.shortName ?? "")     ->     \(trip?.endLocation?.shortName ?? "")"
+		cell?.fromLocationName.text = trip?.startLocation?.shortName
+		cell?.toLocationName.text = trip?.endLocation?.shortName
 		
 		return cell!
 	}

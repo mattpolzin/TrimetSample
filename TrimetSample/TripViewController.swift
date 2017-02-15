@@ -45,22 +45,24 @@ class TripViewController : UIViewController {
 	*/
 	private func refreshTripView() {
 		
-		if routeOptions?.count ?? 0 > 0 {
-			// sort by shortest duration
-			_routeOptions?.sort(by: { (route1 : RouteOption, route2: RouteOption) in
-				return route1.duration <= route2.duration
-			})
-			
-			// and update the labels
-			routesAvailableText?.text = "\(routeOptions?.count ?? 0) \(routesAvailablePostfix)"
-			routeDurationText?.text = "\(routeOptions?[0].duration ?? 0) \(routeDurationPostfix)"
-			routeCostText?.text = "\(routeCostPrefix)\(routeOptions?[0].cost ?? 0)"
+		guard let numRouteOptions = routeOptions?.count, numRouteOptions > 0 else {
+			// let the user know their route was not found.
+			routesAvailableText?.text = "No routes were found."
+			routeDurationText?.text = ""
+			routeCostText?.text = ""
+			return
 		}
 		
-		// let the user know their route was not found.
-		routesAvailableText?.text = "No routes were found."
-		routeDurationText?.text = ""
-		routeCostText?.text = ""
+		
+		// sort by shortest duration
+		_routeOptions?.sort(by: { (route1 : RouteOption, route2: RouteOption) in
+			return route1.duration <= route2.duration
+		})
+		
+		// and update the labels
+		routesAvailableText?.text = "\(numRouteOptions) \(routesAvailablePostfix)"
+		routeDurationText?.text = "\(routeOptions?[0].duration ?? 0) \(routeDurationPostfix)"
+		routeCostText?.text = "\(routeCostPrefix)\(routeOptions?[0].cost ?? 0)"
 	}
 	
 }

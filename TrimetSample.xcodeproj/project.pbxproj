@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A89400CCEA93DD343557641 /* Pods_TrimetSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAC4F750EC3AE3A5FFF3499 /* Pods_TrimetSampleTests.framework */; };
+		C9662A761E541C9E0076DD53 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9662A751E541C9E0076DD53 /* TripTableViewCell.swift */; };
 		C9F1EB851E4C50E1009E8310 /* RouteOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1EB841E4C50E1009E8310 /* RouteOption.swift */; };
 		C9F1EB871E4CC581009E8310 /* TripResults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F1EB861E4CC581009E8310 /* TripResults.storyboard */; };
 		C9FB4DDF1E4C08A4006F4556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FB4DDE1E4C08A4006F4556 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		3F7C93FC70F96971310EDACD /* Pods-TrimetSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A590D043047D43F66516E80 /* Pods-TrimetSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSampleTests/Pods-TrimetSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		7DCCE32441E4E06B9AB0BEC6 /* Pods-TrimetSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrimetSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrimetSample/Pods-TrimetSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C9662A751E541C9E0076DD53 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		C9F1EB841E4C50E1009E8310 /* RouteOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteOption.swift; sourceTree = "<group>"; };
 		C9F1EB861E4CC581009E8310 /* TripResults.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripResults.storyboard; sourceTree = "<group>"; };
 		C9FB4DDB1E4C08A4006F4556 /* TrimetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				C9FB4DEA1E4C08A4006F4556 /* LaunchScreen.storyboard */,
 				C9FB4DE21E4C08A4006F4556 /* Main.storyboard */,
 				C9F1EB861E4CC581009E8310 /* TripResults.storyboard */,
+				C9662A751E541C9E0076DD53 /* TripTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				C9FB4DE11E4C08A4006F4556 /* RootViewController.swift in Sources */,
 				C9FB4E0B1E4C0FCA006F4556 /* TripViewController.swift in Sources */,
 				C9FB4E091E4C0F79006F4556 /* SavedTripsTableViewController.swift in Sources */,
+				C9662A761E541C9E0076DD53 /* TripTableViewCell.swift in Sources */,
 				C9FB4DDF1E4C08A4006F4556 /* AppDelegate.swift in Sources */,
 				C9FB4E051E4C0C23006F4556 /* TripStore.swift in Sources */,
 				C9FB4E0E1E4C102D006F4556 /* TrimetSearchController.swift in Sources */,
